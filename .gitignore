@@ -1,7 +1,7 @@
 *.iws
 *.ipr
 *.iml
-*.idea/
+.idea
 .idea/**
 target
 atlassian*
