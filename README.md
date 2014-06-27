@@ -23,7 +23,7 @@ Prerequisites
 
 Before you begin, you must have the following:
 
-* an instance of Accumulo 1.5.x running on Hadoop 2.2.x
+* an instance of Accumulo 1.4.x running on Hadoop 0.20
 * an Accumulo user that has both create-table and write permissions
 * a local copy of the [Java](http://java.oracle.com/) Development Kit 1.7.x
 * Apache [Maven](http://maven.apache.org/) installed
@@ -41,6 +41,12 @@ git clone git@github.com:locationtech/geomesa.git
 From that newly-created directory, run
 
 ```
+git checkout accumulo1.4/1.x
+```
+
+Followed by
+
+```
 mvn clean install
 ```
 
@@ -56,6 +62,12 @@ Pick a reasonable directory on your machine, and run:
 
 ```
 git clone git@github.com:geomesa/geomesa-quickstart.git
+```
+
+Checkout the accumulo1.4/1.x branch
+
+```
+git checkout accumulo1.4/1.x
 ```
 
 The ```pom.xml``` file contains an explicit list of dependent libraries that will be bundled together into the final tutorial.  You should confirm
