@@ -89,7 +89,7 @@ Run the tutorial
 On the command-line, run:
 
 ```
-java -cp ./target/geomesa-quickstart-1.0-SNAPSHOT.jar org.geomesa.QuickStart -instanceId somecloud -zookeepers "zoo1:2181,zoo2:2181,zoo3:2181" -user someuser -password somepwd -tableName sometable
+java -cp ./target/geomesa-quickstart-accumulo-1.4-1.0-SNAPSHOT.jar org.geomesa.QuickStart -instanceId somecloud -zookeepers "zoo1:2181,zoo2:2181,zoo3:2181" -user someuser -password somepwd -tableName sometable
 ```
 
 where you provide the following arguments:
