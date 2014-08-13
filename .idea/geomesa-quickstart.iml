@@ -11,45 +11,32 @@
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
-    <orderEntry type="library" name="Maven: geomesa:geomesa-core-accumulo1.5:1.0.0-SNAPSHOT" level="project" />
-    <orderEntry type="library" name="Maven: geomesa:geomesa-utils-accumulo1.5:1.0.0-SNAPSHOT" level="project" />
+    <orderEntry type="library" name="Maven: org.locationtech.geomesa:geomesa-core-accumulo1.5:1.0.0-SNAPSHOT" level="project" />
+    <orderEntry type="library" name="Maven: org.locationtech.geomesa:geomesa-utils-accumulo1.5:1.0.0-SNAPSHOT" level="project" />
     <orderEntry type="library" name="Maven: commons-pool:commons-pool:1.5.4" level="project" />
     <orderEntry type="library" name="Maven: commons-codec:commons-codec:1.8" level="project" />
-    <orderEntry type="library" name="Maven: org.scala-lang:scala-library:2.10.3" level="project" />
+    <orderEntry type="library" name="Maven: org.scala-lang:scala-library:2.10.4" level="project" />
     <orderEntry type="library" name="Maven: com.vividsolutions:jts:1.13" level="project" />
     <orderEntry type="library" name="Maven: org.geotools:gt-referencing:9.5" level="project" />
     <orderEntry type="library" name="Maven: java3d:vecmath:1.3.2" level="project" />
-    <orderEntry type="library" name="Maven: org.geotools:gt-metadata:11.0" level="project" />
+    <orderEntry type="library" name="Maven: org.geotools:gt-metadata:11.2" level="project" />
     <orderEntry type="library" name="Maven: org.geotools:gt-opengis:9.5" level="project" />
     <orderEntry type="library" name="Maven: net.java.dev.jsr-275:jsr-275:1.0-beta-2" level="project" />
     <orderEntry type="library" name="Maven: javax.media:jai_core:1.1.3" level="project" />
     <orderEntry type="library" name="Maven: jgridshift:jgridshift:1.0" level="project" />
-    <orderEntry type="library" name="Maven: org.geotools:gt-main:11.0" level="project" />
-    <orderEntry type="library" name="Maven: org.geotools:gt-api:11.0" level="project" />
+    <orderEntry type="library" name="Maven: org.geotools:gt-main:11.2" level="project" />
+    <orderEntry type="library" name="Maven: org.geotools:gt-api:11.2" level="project" />
     <orderEntry type="library" name="Maven: org.jdom:jdom:1.1.3" level="project" />
-    <orderEntry type="library" name="Maven: joda-time:joda-time:2.1" level="project" />
-    <orderEntry type="library" name="Maven: org.joda:joda-convert:1.2" level="project" />
+    <orderEntry type="library" name="Maven: org.geotools:gt-grid:11.0" level="project" />
+    <orderEntry type="library" name="Maven: joda-time:joda-time:2.3" level="project" />
+    <orderEntry type="library" name="Maven: org.joda:joda-convert:1.6" level="project" />
+    <orderEntry type="library" name="Maven: com.spatial4j:spatial4j:0.4.1" level="project" />
     <orderEntry type="library" name="Maven: com.typesafe:scalalogging-slf4j_2.10:1.1.0" level="project" />
     <orderEntry type="library" name="Maven: org.scala-lang:scala-reflect:2.10.3" level="project" />
-    <orderEntry type="library" name="Maven: org.slf4j:slf4j-api:1.6.1" level="project" />
-    <orderEntry type="library" name="Maven: geomesa:geomesa-filter-accumulo1.5:1.0.0-SNAPSHOT" level="project" />
-    <orderEntry type="library" name="Maven: org.geotools:gt-transform:11.0" level="project" />
-    <orderEntry type="library" name="Maven: org.geotools:gt-data:9.5" level="project" />
-    <orderEntry type="library" name="Maven: org.geotools:gt-cql:11.0" level="project" />
-    <orderEntry type="library" name="Maven: org.geotools:gt-render:11.0" level="project" />
-    <orderEntry type="library" name="Maven: org.geotools:gt-coverage:11.0" level="project" />
-    <orderEntry type="library" name="Maven: javax.media:jai_imageio:1.1" level="project" />
-    <orderEntry type="library" name="Maven: it.geosolutions.imageio-ext:imageio-ext-tiff:1.1.8" level="project" />
-    <orderEntry type="library" name="Maven: it.geosolutions.imageio-ext:imageio-ext-utilities:1.1.8" level="project" />
-    <orderEntry type="library" name="Maven: javax.media:jai_codec:1.1.3" level="project" />
-    <orderEntry type="library" name="Maven: org.jaitools:jt-zonalstats:1.3.1" level="project" />
-    <orderEntry type="library" name="Maven: org.jaitools:jt-utils:1.3.1" level="project" />
-    <orderEntry type="library" name="Maven: org.geotools:gt-process-feature:11.0" level="project" />
-    <orderEntry type="library" name="Maven: org.geotools:gt-process:11.0" level="project" />
-    <orderEntry type="library" name="Maven: org.geotools:gt-shapefile:11.0" level="project" />
-    <orderEntry type="library" name="Maven: org.geotools:gt-grid:11.0" level="project" />
-    <orderEntry type="library" name="Maven: net.sf.ehcache:ehcache-core:2.6.2" level="project" />
-    <orderEntry type="library" name="Maven: javax.transaction:jta:1.1" level="project" />
+    <orderEntry type="library" name="Maven: org.slf4j:slf4j-api:1.6.4" level="project" />
+    <orderEntry type="library" name="Maven: org.locationtech.geomesa:geomesa-filter-accumulo1.5:1.0.0-SNAPSHOT" level="project" />
+    <orderEntry type="library" name="Maven: org.geotools:gt-transform:11.2" level="project" />
+    <orderEntry type="library" name="Maven: org.locationtech.geomesa:geomesa-feature-accumulo1.5:1.0.0-SNAPSHOT" level="project" />
     <orderEntry type="library" name="Maven: org.apache.avro:avro:1.7.5" level="project" />
     <orderEntry type="library" name="Maven: org.codehaus.jackson:jackson-core-asl:1.9.13" level="project" />
     <orderEntry type="library" name="Maven: org.codehaus.jackson:jackson-mapper-asl:1.9.13" level="project" />
@@ -57,6 +44,19 @@
     <orderEntry type="library" name="Maven: org.xerial.snappy:snappy-java:1.0.5" level="project" />
     <orderEntry type="library" name="Maven: org.apache.commons:commons-compress:1.4.1" level="project" />
     <orderEntry type="library" name="Maven: org.tukaani:xz:1.0" level="project" />
+    <orderEntry type="library" name="Maven: org.geotools:gt-data:9.5" level="project" />
+    <orderEntry type="library" name="Maven: org.geotools:gt-cql:11.2" level="project" />
+    <orderEntry type="library" name="Maven: org.geotools:gt-render:11.2" level="project" />
+    <orderEntry type="library" name="Maven: org.geotools:gt-coverage:11.2" level="project" />
+    <orderEntry type="library" name="Maven: javax.media:jai_imageio:1.1" level="project" />
+    <orderEntry type="library" name="Maven: it.geosolutions.imageio-ext:imageio-ext-tiff:1.1.10" level="project" />
+    <orderEntry type="library" name="Maven: it.geosolutions.imageio-ext:imageio-ext-utilities:1.1.10" level="project" />
+    <orderEntry type="library" name="Maven: javax.media:jai_codec:1.1.3" level="project" />
+    <orderEntry type="library" name="Maven: org.jaitools:jt-zonalstats:1.3.1" level="project" />
+    <orderEntry type="library" name="Maven: org.jaitools:jt-utils:1.3.1" level="project" />
+    <orderEntry type="library" name="Maven: org.geotools:gt-process-feature:11.2" level="project" />
+    <orderEntry type="library" name="Maven: org.geotools:gt-process:11.2" level="project" />
+    <orderEntry type="library" name="Maven: org.geotools:gt-shapefile:11.2" level="project" />
     <orderEntry type="library" name="Maven: commons-cli:commons-cli:1.2" level="project" />
     <orderEntry type="library" name="Maven: org.apache.accumulo:accumulo-core:1.5.0" level="project" />
     <orderEntry type="library" name="Maven: com.beust:jcommander:1.30" level="project" />
