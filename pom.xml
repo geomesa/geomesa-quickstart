@@ -7,6 +7,11 @@
     <groupId>groupId</groupId>
     <artifactId>geomesa-quickstart</artifactId>
     <version>1.0-SNAPSHOT</version>
+
+    <properties>
+        <gt.version>11.2</gt.version>
+    </properties>
+
     <dependencies>
         <dependency>
             <groupId>org.locationtech.geomesa</groupId>
@@ -41,17 +46,17 @@
         <dependency>
             <groupId>org.geotools</groupId>
             <artifactId>gt-opengis</artifactId>
-            <version>9.5</version>
+            <version>${gt.version}</version>
         </dependency>
         <dependency>
             <groupId>org.geotools</groupId>
             <artifactId>gt-data</artifactId>
-            <version>9.5</version>
+            <version>${gt.version}</version>
         </dependency>
         <dependency>
             <groupId>org.geotools</groupId>
             <artifactId>gt-epsg-hsql</artifactId>
-            <version>9.5</version>
+            <version>${gt.version}</version>
         </dependency>
     </dependencies>
 
