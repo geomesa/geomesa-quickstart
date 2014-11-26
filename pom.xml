@@ -9,6 +9,14 @@
             <id>geotools</id>
             <url>http://download.osgeo.org/webdav/geotools</url>
         </repository>
+        <repository>
+            <id>Apache</id>
+            <url>https://repository.apache.org/service/local/repositories/releases/content</url>
+        </repository>
+        <repository>
+            <id>LocationTech</id>
+            <url>https://repo.locationtech.org/content/repositories/geomesa-releases/</url>
+        </repository>
     </repositories>
 
     <groupId>groupId</groupId>
@@ -23,7 +31,7 @@
         <dependency>
             <groupId>org.locationtech.geomesa</groupId>
             <artifactId>geomesa-core-accumulo1.5</artifactId>
-            <version>1.0.0-SNAPSHOT</version>
+            <version>1.0.0-rc.1</version>
         </dependency>
         <dependency>
             <groupId>commons-cli</groupId>
