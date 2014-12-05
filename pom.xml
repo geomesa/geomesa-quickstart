@@ -71,7 +71,6 @@
             <artifactId>commons-cli</artifactId>
             <version>1.2</version>
         </dependency>
-<!--
         <dependency>
             <groupId>org.apache.accumulo</groupId>
             <artifactId>accumulo-core</artifactId>
@@ -87,6 +86,7 @@
             <artifactId>hadoop-client</artifactId>
             <version>2.2.0</version>
         </dependency>
+<!--
         <dependency>
             <groupId>com.google.guava</groupId>
             <artifactId>guava</artifactId>
