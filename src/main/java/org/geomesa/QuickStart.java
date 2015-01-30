@@ -18,6 +18,7 @@ import org.joda.time.DateTimeZone;
 import org.locationtech.geomesa.core.data.AccumuloFeatureStore;
 import org.locationtech.geomesa.core.index.Constants;
 import org.locationtech.geomesa.utils.geotools.SimpleFeatureTypes$;
+import org.locationtech.geomesa.core.security.SecurityUtils;
 import org.locationtech.geomesa.utils.text.WKTUtils$;
 import org.opengis.feature.Feature;
 import org.opengis.feature.simple.SimpleFeature;
@@ -123,6 +124,7 @@ public class QuickStart {
 
     // list the attributes that constitute the feature type
     List<String> attributes = Lists.newArrayList(
+      "Visibility:String",
       "Who:String:index=full",
       "What:java.lang.Long",     // some types require full qualification (see DataUtilities docs)
       "When:Date",               // a date-time field is optional, but can be indexed
@@ -165,6 +167,13 @@ public class QuickStart {
       simpleFeature.getUserData().put(Hints.USE_PROVIDED_FID, java.lang.Boolean.TRUE);
 
       // populate the new feature's attributes
+      if (i % 2 == 0) {
+          simpleFeature.setAttribute("Visibility", "user&admin");
+          simpleFeature.getUserData().put(SecurityUtils.FEATURE_VISIBILITY, "user&admin");
+      } else {
+          simpleFeature.setAttribute("Visibility", "user");
+          simpleFeature.getUserData().put(SecurityUtils.FEATURE_VISIBILITY, "user");
+      }
 
       // string value
       simpleFeature.setAttribute("Who", PEOPLE_NAMES[i % PEOPLE_NAMES.length]);
