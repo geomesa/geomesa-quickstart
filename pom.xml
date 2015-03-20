@@ -23,7 +23,7 @@
         <dependency>
             <groupId>org.locationtech.geomesa</groupId>
             <artifactId>geomesa-core-accumulo1.5</artifactId>
-            <version>1.0.0-rc.3-SNAPSHOT</version>
+            <version>1.0.0-rc.5-SNAPSHOT</version>
         </dependency>
         <dependency>
             <groupId>commons-cli</groupId>
@@ -64,6 +64,11 @@
             <groupId>org.geotools</groupId>
             <artifactId>gt-epsg-hsql</artifactId>
             <version>${gt.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.objenesis</groupId>
+            <artifactId>objenesis</artifactId>
+            <version>1.0</version>
         </dependency>
     </dependencies>
 
