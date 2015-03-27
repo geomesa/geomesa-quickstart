@@ -168,11 +168,11 @@ public class QuickStart {
 
       // populate the new feature's attributes
       if (i % 2 == 0) {
-          simpleFeature.setAttribute("Visibility", "user&admin");
-          simpleFeature.getUserData().put(SecurityUtils.FEATURE_VISIBILITY, "user&admin");
-      } else {
           simpleFeature.setAttribute("Visibility", "user");
           simpleFeature.getUserData().put(SecurityUtils.FEATURE_VISIBILITY, "user");
+      } else {
+          simpleFeature.setAttribute("Visibility", "user|admin");
+          simpleFeature.getUserData().put(SecurityUtils.FEATURE_VISIBILITY, "user|admin");
       }
 
       // string value
