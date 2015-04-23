@@ -17,6 +17,7 @@ import org.joda.time.DateTime;
 import org.joda.time.DateTimeZone;
 import org.locationtech.geomesa.core.data.AccumuloFeatureStore;
 import org.locationtech.geomesa.core.index.Constants;
+import org.locationtech.geomesa.utils.geotools.SimpleFeatureTypes$;
 import org.locationtech.geomesa.utils.text.WKTUtils$;
 import org.opengis.feature.Feature;
 import org.opengis.feature.simple.SimpleFeature;
@@ -122,7 +123,7 @@ public class QuickStart {
 
     // list the attributes that constitute the feature type
     List<String> attributes = Lists.newArrayList(
-      "Who:String",
+      "Who:String:index=full",
       "What:java.lang.Long",     // some types require full qualification (see DataUtilities docs)
       "When:Date",               // a date-time field is optional, but can be indexed
       "*Where:Point:srid=4326",  // the "*" denotes the default geometry (used for indexing)
@@ -132,7 +133,7 @@ public class QuickStart {
     // create the bare simple-feature type
     String simpleFeatureTypeSchema = Joiner.on(",").join(attributes);
     SimpleFeatureType simpleFeatureType =
-      DataUtilities.createType(simpleFeatureTypeName, simpleFeatureTypeSchema);
+      SimpleFeatureTypes$.MODULE$.createType(simpleFeatureTypeName, simpleFeatureTypeSchema);
 
     // use the user-data (hints) to specify which date-time field is meant to be indexed;
     // if you skip this step, your data will still be stored, it simply won't be indexed
