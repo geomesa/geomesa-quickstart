@@ -118,7 +118,7 @@ public class QuickStart {
     return dsConf;
   }
 
-  static SimpleFeatureType createSimpleFeatureType(String simpleFeatureTypeName)
+  static SimpleFeatureType createSimpleFeatureType(String simpleFeatureTypeNamespace, String simpleFeatureTypeName)
     throws SchemaException {
 
     // list the attributes that constitute the feature type
@@ -133,7 +133,7 @@ public class QuickStart {
     // create the bare simple-feature type
     String simpleFeatureTypeSchema = Joiner.on(",").join(attributes);
     SimpleFeatureType simpleFeatureType =
-      SimpleFeatureTypes$.MODULE$.createType(simpleFeatureTypeName, simpleFeatureTypeSchema);
+      SimpleFeatureTypes$.MODULE$.createType(simpleFeatureTypeNamespace, simpleFeatureTypeName, simpleFeatureTypeSchema);
 
     // use the user-data (hints) to specify which date-time field is meant to be indexed;
     // if you skip this step, your data will still be stored, it simply won't be indexed
@@ -268,8 +268,9 @@ public class QuickStart {
     assert dataStore != null;
 
     // establish specifics concerning the SimpleFeatureType to store
+    String simpleFeatureTypeNamespace = "geomesa";
     String simpleFeatureTypeName = "QuickStart";
-    SimpleFeatureType simpleFeatureType = createSimpleFeatureType(simpleFeatureTypeName);
+    SimpleFeatureType simpleFeatureType = createSimpleFeatureType(simpleFeatureTypeNamespace, simpleFeatureTypeName);
 
     // write Feature-specific metadata to the destination table in Accumulo
     // (first creating the table if it does not already exist); you only need
