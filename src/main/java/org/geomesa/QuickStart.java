@@ -18,7 +18,7 @@ import org.joda.time.DateTimeZone;
 import org.locationtech.geomesa.core.data.AccumuloFeatureStore;
 import org.locationtech.geomesa.core.index.Constants;
 import org.locationtech.geomesa.utils.geotools.SimpleFeatureTypes$;
-import org.locationtech.geomesa.core.security.SecurityUtils;
+import org.locationtech.geomesa.security.SecurityUtils;
 import org.locationtech.geomesa.utils.text.WKTUtils$;
 import org.opengis.feature.Feature;
 import org.opengis.feature.simple.SimpleFeature;
