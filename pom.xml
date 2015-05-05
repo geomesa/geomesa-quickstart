@@ -17,13 +17,14 @@
 
     <properties>
         <gt.version>11.2</gt.version>
+        <geomesa.version>1.0.0-rc.6</geomesa.version>
     </properties>
 
     <dependencies>
         <dependency>
             <groupId>org.locationtech.geomesa</groupId>
             <artifactId>geomesa-core-accumulo1.5</artifactId>
-            <version>1.0.0-rc.5-SNAPSHOT</version>
+            <version>${geomesa.version}</version>
         </dependency>
         <dependency>
             <groupId>org.locationtech.geomesa</groupId>
