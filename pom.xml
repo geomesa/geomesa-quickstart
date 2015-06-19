@@ -9,6 +9,11 @@
             <id>geotools</id>
             <url>http://download.osgeo.org/webdav/geotools</url>
         </repository>
+        <repository>
+            <id>locationtech</id>
+            <!--<url>https://repo.locationtech.org</url>-->
+            <url>https://repo.locationtech.org/service/local/repositories/geomesa-releases/content</url>
+        </repository>
     </repositories>
 
     <groupId>groupId</groupId>
@@ -17,7 +22,7 @@
 
     <properties>
         <gt.version>11.2</gt.version>
-        <geomesa.version>1.0.0-rc.6</geomesa.version>
+        <geomesa.version>1.0.0-rc.7</geomesa.version>
     </properties>
 
     <dependencies>
